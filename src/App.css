@@ -1,0 +1,175 @@
+﻿#root {
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+/* Main page */
+
+.dashboard {
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charts-section {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+}
+
+.sidebar {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.chart-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-size: 1.2rem;
+}
+
+.clean-energy-badge {
+    background-color: #e7f5ff;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1971c2;
+    display: inline-block;
+}
+
+.chart-wrapper {
+    width: 100%;
+    height: 350px;
+}
+
+.charging-window-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 1.3rem;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.hours-input {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.hours-input:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+}
+
+.submit-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #4dabf7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #339af0;
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #4dabf7;
+}
+
+.result-title {
+    margin-bottom: 15px;
+    color: #4dabf7;
+    font-size: 1.1rem;
+}
+
+.result-content {
+    line-height: 1.8;
+    color: #333;
+}
+
+.result-content p {
+    margin: 10px 0;
+}
+
+.clean-energy-percent {
+    color: #51cf66;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.loading,
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+}
+
+.error {
+    color: #fa5252;
+}
+
